@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+echo "Run this command as sudo.";
+sudo cp cleaner.py /usr/bin/;
+sudo chmod 777 /usr/bin/cleaner.py;
+sudo echo "alias cleaner='python3 /usr/bin/cleaner.py'" >> ~/.bashrc;
+source ~/.bashrc;
+echo "#####################################################";
+echo "Your File cleaner is successfully installed";
+echo "type 'cleaner' from anywhere in terminal to launch the application";
